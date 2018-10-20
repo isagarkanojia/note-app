@@ -5,7 +5,9 @@ var fetchNotes=()=>{
     var noteString=fs.readFileSync('notes-data.json');
     return JSON.parse(noteString);
   }catch(e){
+
     return [];
+
   }
 }
 
